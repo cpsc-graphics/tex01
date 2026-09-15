@@ -33,9 +33,8 @@ void renderingThread(sf::RenderWindow& window, std::atomic<bool>& running, std::
 		
         window.clear();
 
-        // TO DO
-        // Draw the ship by calling the appropriate draw method on the window.    
-        // ...
+        // draw the ship    
+        window.draw( *ship );
         
         // end the current frame
         window.display();
